@@ -1,0 +1,28 @@
+.container {
+  padding: 1.5rem 4rem;
+
+  border-top: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+
+  margin-top: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 15.25rem;
+  line-height: 140%;
+
+  color: var(--gray-300);
+}
+
+.container img {
+  margin-bottom: 1rem;
+}
+
+.container p {
+  display: flex;
+  flex-direction: column;
+}
