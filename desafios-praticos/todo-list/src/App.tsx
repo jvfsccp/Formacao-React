@@ -1,12 +1,12 @@
-import styles from "./App.module.css"
-import { PlusCircle } from "phosphor-react"
-import { Button } from "./components/Button"
+import styles from './App.module.css'
+import { PlusCircle } from 'phosphor-react'
+import { Button } from './components/Button'
 
-import { Header } from "./components/Header"
-import { Input } from "./components/Input"
-import { Header as ListHeader } from "./components/ListTasks/Header"
-import { Empty } from "./components/ListTasks/Empty"
-import { Task } from "./components/ListTasks/Item"
+import { Header } from './components/Header'
+import { Input } from './components/Input'
+import { Header as ListHeader } from './components/ListTasks/Header'
+import { Empty } from './components/ListTasks/Empty'
+import { Item } from './components/ListTasks/Item'
 
 export function App() {
   return (
@@ -26,10 +26,8 @@ export function App() {
         <div className={styles.tasksList}>
           <ListHeader tasksCounter={5} checkedTasksCounter={2} />
 
-          <Task />
+          <Item />
         </div>
-
-        <Empty />
       </section>
     </main>
   )

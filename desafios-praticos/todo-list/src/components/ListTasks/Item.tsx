@@ -1,8 +1,8 @@
-import { Check } from "phosphor-react"
+import { Check, Trash } from 'phosphor-react'
 
-import styles from "Item.module.css"
+import styles from './Item.module.css'
 
-export function Task() {
+export function Item() {
   return (
     <div className={styles.container}>
       <div>
@@ -11,8 +11,13 @@ export function Task() {
           <span className={styles.checkbox}>
             <Check />
           </span>
+          <p className={styles.paragraph}>Task</p>
         </label>
       </div>
+
+      <button>
+        <Trash size={16} color="#808080" />
+      </button>
     </div>
   )
 }
